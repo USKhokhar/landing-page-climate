@@ -1,0 +1,16 @@
+.primary-btn{
+    border: none;
+    padding: 0.5rem 1rem;
+    background: $primary-blue;
+    color: $primary-light;
+    font: normal 300 1rem/1rem $secondary-font;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover{
+        // font-weight: 500;
+        background: $secondary-green;
+        color: $white;
+    }
+}
+

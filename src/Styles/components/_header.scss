@@ -1,0 +1,61 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $primary-green;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        
+        .nav-link{
+            text-decoration: none;
+            font: normal 300 1rem/1rem $secondary-font;
+            text-transform: uppercase;
+            color: $primary-blue;
+            transition: 300ms;
+
+            &:hover{
+                text-decoration: underline;
+                color: $primary-light;
+            }
+        }
+    }
+
+    .fa-solid{
+        display: none;
+    }
+}
+
+.current{
+    background: $secondary-green !important;
+    color: $primary-light !important;
+}
+
+@media screen and (max-width: 680px){
+    nav{
+        display: none !important;
+    }
+
+    .menu{
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background: $primary-green;
+        width: 100%;
+        padding: 2rem;
+        transition: 250ms;
+    }
+
+    .fa-solid{
+        display: block !important;
+        font-size: 3rem;
+        color: $primary-blue;
+    }
+}

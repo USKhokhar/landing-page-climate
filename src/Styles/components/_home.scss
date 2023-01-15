@@ -1,0 +1,128 @@
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#newsletter{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40vh;
+    background: $primary-green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    
+    .nl-txt{
+        display: grid;
+        gap: 1rem;
+        width: 40%;
+    }
+
+    .nl-form{
+        background: $secondary-green;
+        display: grid;
+        gap: 1rem;
+        padding: 2rem;
+        // width: 40%;
+
+        #email{
+            padding: 0.5rem 1rem;
+            font: normal 300 1rem/1rem $secondary-font;
+            color: $primary-blue;
+        }
+
+        button{
+            &:hover{
+                background: $primary-green
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    #newsletter{
+        gap: 2rem;
+    }
+    .nl-txt{
+        width: fit-content !important;
+    }
+}
+
+#mission{
+    display: grid;
+    gap: 8rem;
+    margin-top: 40%;
+    // padding: 2rem;
+    h1{
+        // line-height: 3rem;
+        margin: auto;
+        padding: 1rem;
+        color: $primary-light;
+    }
+}
+
+footer{
+    background: $secondary-green !important;
+
+    h1{
+        color: $primary-light;
+    }
+
+    .ft-txt{
+        display: grid;
+        gap: 2rem;
+        .social{
+            display: flex;
+            justify-content: space-evenly;
+            .fa-brands{
+                font-size: 3rem;
+                color: $primary-blue;   
+                transition: 300ms;
+
+                &:hover{
+                    color: $primary-light;
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+
+    .ft-nav{
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        gap: 1rem;
+        .ft-link{
+            font: normal 300 1rem/1.5rem $secondary-font;
+            color: $primary-light;
+            text-transform: capitalize;
+            text-decoration: none;
+            text-align: center;
+            transition: 250ms;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}
+
+.credit{
+    font: normal 200 0.8rem/1rem $primary-font;
+    color: $primary-blue;
+    text-decoration: none;
+    text-align: center;
+    transition: 300ms;
+    &:hover{
+        color: $primary-light;
+    }
+}

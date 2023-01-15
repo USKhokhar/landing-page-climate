@@ -1,0 +1,25 @@
+@import './base/colors';
+@import './base/typography';
+@import './base/buttons';
+@import './components/header';
+@import './components/main';
+@import './components/home';
+@import './components/pages';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 680px){
+    *{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 375px){
+    *{
+        font-size: 8px;
+    }
+}

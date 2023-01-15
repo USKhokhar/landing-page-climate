@@ -1,0 +1,52 @@
+.bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: url('./bg-img.jpg') center center/cover no-repeat;
+}
+
+#team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-pg{
+    width: 90%;
+    max-width: 880px;
+    margin-top: 8%;
+    height: fit-content;
+    // height: 70vh;
+    // // max-height: fit-content;
+    background: $secondary-green;
+    z-index: 1; 
+    display: grid;
+    justify-content: center;
+    padding: 2rem;
+
+    h1{
+        color: $primary-green;
+    }
+    
+    .people{
+        // display: grid;
+        // grid-template-columns: repeat(3, 200px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem;
+        .person{
+            // background: $primary-blue;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: auto;
+                width: 8rem;
+            }
+        }
+    }
+}
