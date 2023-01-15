@@ -20,7 +20,13 @@ const App = () => {
                 <Route path='/team' element={<Team />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/volunteer' element={<Volunteer />} />
-                <Route path='/join' element={<Newsletter />} />
+                <Route path='/join' element={
+                  <Newsletter
+                    title={'join our newsletter'}
+                    subtitle={'get in touch with us and be part of the mission serving and protecting mother nature.'}
+                    formtitle={'Welcome us in your inbox'}
+                  />
+                } />
                 <Route path='*' element={<Error />} />
             </Routes>
         </main>

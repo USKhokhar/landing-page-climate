@@ -15,7 +15,7 @@ const Team = () => {
   if(status === 'error') return <Error />
 
   return (
-    <section className="bg" id="team">
+    <section className="bg" id="team" style={{backgroundImage: `url("./bg-img.jpg")`, backgroundSize: 'cover'}}>
       <div className="team-pg">
         <h1>Our team</h1>
 
